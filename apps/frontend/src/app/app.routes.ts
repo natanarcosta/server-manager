@@ -9,8 +9,8 @@ export const routes: Routes = [
   },
   {
     path: 'servers',
-    redirectTo: '/dashboard',
-    pathMatch: 'full',
+    loadComponent: () =>
+      import('./pages/servers/servers.component').then((m) => m.ServersComponent),
   },
   {
     path: 'servers/:id',
