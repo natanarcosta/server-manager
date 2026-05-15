@@ -1,0 +1,32 @@
+node_modules/
+dist/
+dist-test/
+.angular/
+.nest/
+
+# Storage
+storage/database/*.db
+storage/backups/**/*.zip
+storage/logs/**/*.log
+storage/servers/
+
+# Environment
+.env
+.env.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Prisma
+apps/backend/prisma/*.db
+apps/backend/prisma/*.db-journal
+
+# Build
+*.tsbuildinfo
